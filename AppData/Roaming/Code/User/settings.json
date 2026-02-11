@@ -192,5 +192,7 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "chat.agent.enabled": false,
     "chat.agent.codeBlockProgress": false,
-    "avalonia.developerMode": true
+    "avalonia.developerMode": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.snippetSuggestions": "top"
 }

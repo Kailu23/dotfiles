@@ -15,26 +15,6 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+alt+up",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+alt+up",
-        "command": "notebook.cell.copyUp",
-        "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "-notebook.cell.copyUp",
-        "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
         "key": "shift+alt+up",
         "command": "editor.action.insertCursorAbove",
         "when": "editorTextFocus"
@@ -55,7 +35,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+down",
+        "key": "ctrl+d",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -65,7 +45,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+alt+down",
+        "key": "ctrl+d",
         "command": "notebook.cell.copyDown",
         "when": "notebookEditorFocused && !inputFocus"
     },
@@ -188,5 +168,25 @@
     {
         "key": "ctrl+shift+3",
         "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "notebook.cell.copyUp",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-notebook.cell.copyUp",
+        "when": "notebookEditorFocused && !inputFocus"
     }
 ]
