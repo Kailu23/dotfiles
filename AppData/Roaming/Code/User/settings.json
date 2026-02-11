@@ -1,0 +1,196 @@
+{
+    "terminal.integrated.automationProfile.windows": {},
+    "terminal.integrated.splitCwd": "workspaceRoot",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": "C:\\WINDOWS\\System32\\cmd.exe",
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "-i"
+            ]
+        },
+        "bash (MSYS2)": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": [
+                "-i"
+            ],
+            "env": {
+                "CHERE_INVOKING": "1"
+            }
+        }
+    },
+    "debug.terminal.useWindowsTerminal": false,
+    "debug.terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "security.workspace.trust.banner": "never",
+    "terminal.integrated.env.windows": {},
+    "gitlens.advanced.messages": {
+        "suppressCreatePullRequestPrompt": true
+    },
+    "git.autofetch": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "workbench.colorTheme": "Vira Ocean",
+    "gitlens.ai.model": "gitkraken",
+    "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+    "viraTheme.accent": "",
+    "workbench.colorCustomizations": {
+        "[Vira*]": {
+            "statusBar.debuggingBackground": {
+                "alpha": 0.2
+            },
+            "statusBar.debuggingForeground": {
+                "alpha": 1
+            },
+            "toolbar.activeBackground": {
+                "alpha": 0.15
+            },
+            "button.background": {
+                "alpha": 1
+            },
+            "button.hoverBackground": {
+                "alpha": 0.8
+            },
+            "extensionButton.separator": {
+                "alpha": 0.2
+            },
+            "extensionButton.background": {
+                "alpha": 0.08
+            },
+            "extensionButton.foreground": {
+                "alpha": 1
+            },
+            "extensionButton.hoverBackground": {
+                "alpha": 0.2
+            },
+            "extensionButton.prominentForeground": {
+                "alpha": 1
+            },
+            "extensionButton.prominentBackground": {
+                "alpha": 0.08
+            },
+            "extensionButton.prominentHoverBackground": {
+                "alpha": 0.2
+            },
+            "activityBarBadge.background": {
+                "alpha": 1
+            },
+            "activityBar.activeBorder": {
+                "alpha": 1
+            },
+            "activityBarTop.activeBorder": {
+                "alpha": 1
+            },
+            "list.inactiveSelectionIconForeground": {
+                "alpha": 1
+            },
+            "list.activeSelectionForeground": {
+                "alpha": 1
+            },
+            "list.inactiveSelectionForeground": {
+                "alpha": 1
+            },
+            "list.highlightForeground": {
+                "alpha": 1
+            },
+            "sash.hoverBorder": {
+                "alpha": 0.5
+            },
+            "list.activeSelectionIconForeground": {
+                "alpha": 1
+            },
+            "scrollbarSlider.activeBackground": {
+                "alpha": 0.5
+            },
+            "editorSuggestWidget.highlightForeground": {
+                "alpha": 1
+            },
+            "textLink.foreground": {
+                "alpha": 1
+            },
+            "progressBar.background": {
+                "alpha": 1
+            },
+            "pickerGroup.foreground": {
+                "alpha": 1
+            },
+            "tab.activeBorder": {
+                "alpha": 1
+            },
+            "tab.activeBorderTop": {
+                "alpha": 0
+            },
+            "tab.unfocusedActiveBorder": {
+                "alpha": 1
+            },
+            "tab.unfocusedActiveBorderTop": {
+                "alpha": 0
+            },
+            "tab.activeModifiedBorder": {
+                "alpha": 0
+            },
+            "notificationLink.foreground": {
+                "alpha": 1
+            },
+            "editorWidget.resizeBorder": {
+                "alpha": 1
+            },
+            "editorWidget.border": {
+                "alpha": 1
+            },
+            "settings.modifiedItemIndicator": {
+                "alpha": 1
+            },
+            "panelTitle.activeBorder": {
+                "alpha": 1
+            },
+            "breadcrumb.activeSelectionForeground": {
+                "alpha": 1
+            },
+            "menu.selectionForeground": {
+                "alpha": 1
+            },
+            "menubar.selectionForeground": {
+                "alpha": 1
+            },
+            "editor.findMatchBorder": {
+                "alpha": 1
+            },
+            "selection.background": {
+                "alpha": 0.25
+            },
+            "statusBarItem.remoteBackground": {
+                "alpha": 0.08
+            },
+            "statusBarItem.remoteHoverBackground": {
+                "alpha": 1
+            },
+            "statusBarItem.remoteForeground": {
+                "alpha": 1
+            },
+            "notebook.inactiveFocusedCellBorder": {
+                "alpha": 0.5
+            },
+            "commandCenter.activeBorder": {
+                "alpha": 0.5
+            },
+            "chat.slashCommandForeground": {
+                "alpha": 1
+            },
+            "chat.avatarForeground": {
+                "alpha": 1
+            }
+        }
+    },
+    "workbench.iconTheme": "vira-icons-ocean",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "chat.agent.enabled": false,
+    "chat.agent.codeBlockProgress": false,
+    "avalonia.developerMode": true
+}
