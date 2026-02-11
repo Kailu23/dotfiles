@@ -36,7 +36,6 @@
     },
     "git.autofetch": true,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "workbench.colorTheme": "Vira Ocean",
     "gitlens.ai.model": "gitkraken",
     "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
     "viraTheme.accent": "",
@@ -188,11 +187,63 @@
             }
         }
     },
-    "workbench.iconTheme": "vira-icons-ocean",
     "liveServer.settings.donotShowInfoMsg": true,
     "chat.agent.enabled": false,
     "chat.agent.codeBlockProgress": false,
-    "avalonia.developerMode": true,
     "editor.autoClosingBrackets": "always",
-    "editor.snippetSuggestions": "top"
+    "editor.snippetSuggestions": "top",
+    "csharp.experimental.debug.hotReload": true,
+    "autoSemicolon.supportedLanguageId.autoMoveFormats": "go,python,pascal,delphi,bash,shellscript,bat,scala,kotlin,r,fsharp,csharp",
+    "workbench.settings.showAISearchToggle": false,
+    "chat.agent.thinking.generateTitles": false,
+    "chat.agent.thinking.terminalTools": false,
+    "chat.agentFilesLocations": {
+        ".github/agents": false,
+        ".claude/agents": false
+    },
+    "chat.agentsControl.enabled": false,
+    "chat.checkpoints.enabled": false,
+    "chat.detectParticipant.enabled": false,
+    "workbench.editorAssociations": {
+        "*.axaml": "default"
+    },
+    "[axaml]": {
+        "editor.defaultFormatter": "AvaloniaTeam.vscode-avalonia"
+    },
+    "avalonia.developerMode": true,
+    "editor.inlayHints.padding": true,
+    "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
+    "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+    "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+    "csharp.inlayHints.enableInlayHintsForTypes": true,
+    "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.autoClosingDelete": "always",
+    "editor.autoClosingOvertype": "always",
+    "editor.autoClosingQuotes": "always",
+    "debug.inlineValues": false,
+    "explorer.autoReveal": false,
+    "chat.disableAIFeatures": true,
+    "csharp-dev-tools.solutionExplorer.fileManagement.recreateSolutionPathForNewSolutionFiles": true,
+    "csharp-dev-tools.solutionViewer.collapseOtherPaths": true,
+    "dotnet.formatting.organizeImportsOnFormat": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "workbench.editor.enablePreview": false,
+    "[xml]": {
+        "editor.defaultFormatter": "dabbinavo.xamlstyler"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "editor.codeActionsOnSave": [
+            "source.organizeImports",
+            "source.fixAll"
+        ]
+    },
+    "workbench.colorTheme": "Material Theme Ocean",
 }
