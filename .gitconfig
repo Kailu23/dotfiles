@@ -18,7 +18,7 @@
 [rerere]
 	enabled = true
 [include]
-	path = ~/.gitconfig.d/logs.conf
 	path = ~/.gitconfig.d/aliases.conf
+	path = ~/.delta/delta.conf
 [core]
 	editor = 'C:\\Program Files\\Neovim\\bin\\nvim.exe'
