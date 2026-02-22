@@ -22,3 +22,6 @@
 	path = ~/.delta/delta.conf
 [core]
 	editor = 'C:\\Program Files\\Neovim\\bin\\nvim.exe'
+[diff]
+	tool = nvimdiff
+	algorithm = histogram
