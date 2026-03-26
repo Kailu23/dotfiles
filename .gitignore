@@ -47,3 +47,4 @@ ntuser.ini
 source/
 .*/*
 dotnet/
+*
