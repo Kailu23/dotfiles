@@ -2,3 +2,4 @@
 	path = .config/nvim
 	url = https://github.com/Kailu23/dotfiles-nvim
 	branch = main
+    ignore = dirty
