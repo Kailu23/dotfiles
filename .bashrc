@@ -1,3 +1,5 @@
-for file in ~/.bashrc.d/*.sh; do
+path=~/.config/bashrc/*.sh
+
+for file in $path; do
 	[ -r "$file" ] && source "$file"
 done

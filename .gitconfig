@@ -21,7 +21,11 @@
 	path = ~/.config/git/aliases.conf
 	path = ~/.config/delta/delta.conf
 [core]
-	editor = 'C:\\Program Files\\Neovim\\bin\\nvim.exe'
+	editor = nvim
 [diff]
 	tool = nvimdiff
 	algorithm = histogram
+[merge]
+	tool = nvimdiff2
+[difftool]
+	prompt = false
