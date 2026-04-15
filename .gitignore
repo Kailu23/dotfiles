@@ -5,4 +5,6 @@
 !.config/**
 
 .config/configstore
+
 .config/git/gitk
+.config/git/signingkey.conf

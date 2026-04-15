@@ -1,14 +1,13 @@
 [user]
 	name = Marin Valenčak
 	email = valencakmarin@gmail.com
-	signingkey = 5CBCB940F9D170DF
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 [gpg]
-    program = ~/.config/git/gpg-wrapper.sh
+    program = C:/Program Files/Git/usr/bin/gpg.exe
 [commit]
 	gpgsign = true
 [tag]
@@ -20,6 +19,7 @@
 [include]
 	path = ~/.config/git/aliases.conf
 	path = ~/.config/delta/delta.conf
+    path = ~/.config/git/signingkey.conf
 [core]
 	editor = nvim
 [diff]
