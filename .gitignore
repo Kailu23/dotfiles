@@ -1,8 +1,11 @@
-*
+**
 
 # Don't ignore
-!.config/
-!.config/**
+!.config/bashrc
+!.config/delta
+!.config/git
+!.config/nvim
+!.config/wezterm
 
 .config/configstore
 
