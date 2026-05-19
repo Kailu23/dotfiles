@@ -16,9 +16,13 @@ if [[ $OSTYPE == linux* ]]; then
     #
     # Make an alias for invoking commands you use constantly
     # alias p='python'
-    export SSH_AUTH_SOCK="/run/user/$(id -u)/ssh-agent.socket"
-
     export NVM_DIR="$HOME/.config/nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+    export SSH_AUTH_SOCK="/run/user/$(id -u)/ssh-agent.socket"
+
+    if ssh-add -l &>/dev/null; then
+        ssh-add ~/.ssh/id_ed25519 &>/dev/null
+    fi
 fi
