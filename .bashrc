@@ -16,6 +16,7 @@ if [[ $OSTYPE == linux* ]]; then
     #
     # Make an alias for invoking commands you use constantly
     # alias p='python'
+    export SSH_AUTH_SOCK="/run/user/$(id -u)/ssh-agent.socket"
 
     export NVM_DIR="$HOME/.config/nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
