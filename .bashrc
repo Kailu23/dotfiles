@@ -22,7 +22,10 @@ if [[ $OSTYPE == linux* ]]; then
 
     export SSH_AUTH_SOCK="/run/user/$(id -u)/ssh-agent.socket"
 
-    if ssh-add -l &>/dev/null; then
-        ssh-add ~/.ssh/id_ed25519 &>/dev/null
+    ssh-add -l &>/dev/null
+    status=$?
+
+    if [[ $status -eq 1 ]]; then
+        ssh-add ~/.ssh/id_ed25519
     fi
 fi
