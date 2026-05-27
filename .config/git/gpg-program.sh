@@ -9,7 +9,7 @@ case "$OSTYPE" in
         GPG_BIN="/usr/bin/gpg"
         USE_LOOPBACK=1
         ;;
-    msys*)
+    msys*|cygwin*)
         if [[ -x "/c/Program Files/Git/usr/bin/gpg.exe" ]]; then
             GPG_BIN="/c/Program Files/Git/usr/bin/gpg.exe"
         fi
