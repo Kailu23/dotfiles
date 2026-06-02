@@ -1,7 +1,7 @@
 **
 
 # Don't ignore
-!.config/bashrc
+!.config/bash
 !.config/delta
 !.config/git
 !.config/nvim
