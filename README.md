@@ -8,7 +8,7 @@ git clone https://github.com/Kailu23/dotfiles ~/.config/ && \
 cd ~/.config/ && \
 git pull --recurse-submodules && \
 git submodule update --init --recursive
-``` 
+```
 
 ## Submodules
 
@@ -21,25 +21,10 @@ git submodule update --init --recursive
 ```
 
 This ensures that `dotfiles/.config/<submodule>` actually contains files because without those lines the diretories would be empty.
-For now only `dotfiles/.config/nvim/` submodule exists here.
-
-## .bashrc
-
-This is my `.bashrc` configuration which takes individual configuration files from `dotfiles/.config/bashrc/` 
-
-The individual files are:
--  [apps.sh](./.config/bashrc/apps.sh)
-    - makes aliases of Android Studio, VS Code and Neovim
-- [ssh-agent.sh](./.config/bashrc/ssh-agent.sh)
-    - start OpenSSH when I'm signing commits
-- [tab-completion.sh](./.config/bashrc/tab-completion.sh)
-    - enables tab completion for .NET CLI
-- [visualstudio.sh](./.config/bashrc/visualstudio.sh)
-    - this is a function which searches for a .sln/.slnx file and opens it with Visual Studio
 
 ## .gitconfig
 
-This contains my config for the git workflow. Notables are: 
+This contains my config for the git workflow. Notables are:
 
 - [aliases.conf](./.config/git/aliases.conf)
     - contains aliases for git log, currently has 3 different git lg's
@@ -59,11 +44,11 @@ This contains my config for the git workflow. Notables are:
 
 Config for WezTerm terminal emulator. I use it because it supports emojis and is cross-platform.
 
-Config file is located in `dotfiles/.config/wezterm/` and for it to be found by WezTerm `$WEZTERM_CONFIG_FILE` 
+Config file is located in `dotfiles/.config/wezterm/` and for it to be found by WezTerm `$WEZTERM_CONFIG_FILE`
 enviroment variable has to be set to the desired path.
 
-On Windows I set it to `%USERPROFILE%/.config/wezterm`. UNIX equivalent would be `$HOME/.config/wezterm/` 
+On Windows I set it to `%USERPROFILE%/.config/wezterm`. UNIX equivalent would be `$HOME/.config/wezterm/`
 
 ## .editorconfig
 
-This contains my formatting options for C#. It was taken from VS once I set it up to my liking.
+This contains my formatting options for various languages.
