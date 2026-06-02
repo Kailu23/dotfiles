@@ -1,4 +1,4 @@
-path=~/.config/bashrc/*.sh
+path=~/.config/bash/*.sh
 
 for file in $path; do
     [ -r "$file" ] && source "$file"
