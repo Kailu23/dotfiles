@@ -1,6 +1,8 @@
 **
+.config/**
 
 # Don't ignore
+!.config/
 !.config/bash
 !.config/delta
 !.config/git
