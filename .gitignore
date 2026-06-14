@@ -8,6 +8,7 @@
 !.config/git
 !.config/nvim
 !.config/wezterm
+!.config/tmux/tmux.conf
 
 .config/configstore
 
