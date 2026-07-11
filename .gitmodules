@@ -8,8 +8,8 @@
 	url = git@github.com:Kailu23/dotfiles-wezterm.git
 	branch = main
     ignore = dirty
-[submodule "bash"]
-	path = .config/bash
+[submodule "zsh"]
+	path = .config/zsh
 	url = git@github.com:Kailu23/dotfiles-bash.git
 	branch = main
     ignore = dirty

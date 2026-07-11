@@ -3,12 +3,12 @@
 
 # Don't ignore
 !.config/
-!.config/bash
 !.config/delta
 !.config/git
 !.config/nvim
 !.config/wezterm
 !.config/tmux/tmux.conf
+!.config/zsh
 
 .config/configstore
 
