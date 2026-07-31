@@ -3,6 +3,7 @@ plugins=(
     git
     azure
     zsh-autosuggestions
+    zsh-syntax-highlighting
     )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
@@ -32,6 +33,8 @@ source $ZSH/oh-my-zsh.sh
 unfunction compinit compaudit
 autoload -Uz compinit compaudit
 unset _zcompdump
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
