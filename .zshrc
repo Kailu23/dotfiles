@@ -34,6 +34,14 @@ unfunction compinit compaudit
 autoload -Uz compinit compaudit
 unset _zcompdump
 
+eval "$(starship init zsh)"
+
+eval "$(dircolors -b)"
+alias ls='eza -al --color=always --group-directories-first --icons=always' # preferred listing
+alias la='eza -a --color=always --group-directories-first --icons=always'  # all files and dirs
+alias ll='eza -l --color=always --group-directories-first --icons=always'  # long format
+alias lt='eza -aT --color=always --group-directories-first --icons=always' # tree listing
+alias l.="eza -a | grep -e '^\.'"                                     # show only dotfiles
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 
 HISTFILE=~/.zsh_history
