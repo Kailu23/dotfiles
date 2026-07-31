@@ -13,3 +13,8 @@
 	url = git@github.com:Kailu23/dotfiles-bash.git
 	branch = main
     ignore = dirty
+[submodule "hypr"]
+	path = .config/hypr
+	url = git@github.com:Kailu23/dotfiles-hypr.git
+	branch = main
+    ignore = dirty

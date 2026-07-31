@@ -5,6 +5,7 @@
 !.config/
 !.config/delta
 !.config/git
+!.config/hypr
 !.config/nvim
 !.config/wezterm
 !.config/tmux/tmux.conf
