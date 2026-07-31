@@ -1,24 +1,24 @@
-[user]
-	name = Marin Valenčak
-	email = valencakmarin@gmail.com
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[gpg]
+[user]
+	name = Marin Valenčak
+	email = valencakmarin@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
     program = ~/.config/git/gpg-program.sh
-[commit]
-	gpgsign = true
-[tag]
-	gpgSign = true
-[init]
-	defaultBranch = main
-[rerere]
-	enabled = true
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[rerere]
+	enabled = true
 [include]
-	path = ~/.config/git/aliases.conf
-	path = ~/.config/delta/delta.conf
+    path = ~/.config/git/aliases.conf
+    path = ~/.config/delta/delta.conf
     path = ~/.config/git/signingkey.conf
 [core]
 	editor = nvim
