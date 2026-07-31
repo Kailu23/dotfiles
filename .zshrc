@@ -60,8 +60,8 @@ if [[ $OSTYPE == linux* ]]; then
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
     export SSH_AUTH_SOCK="/run/user/$(id -u)/ssh-agent.socket"
     ssh-add -l &>/dev/null
-    status=$?
-    if [[ $status -eq 1 ]]; then
+    ssh_status=$?
+    if [[ $ssh_status -eq 1 ]]; then
         ssh-add ~/.ssh/id_ed25519
     fi
 fi
