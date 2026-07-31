@@ -55,9 +55,6 @@ fi
 
 if [[ $OSTYPE == linux* ]]; then
     [[ $- != *i* ]] && return
-    source ~/.local/share/omarchy/default/bash/rc
-    export NVM_DIR="$HOME/.config/nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
     export SSH_AUTH_SOCK="/run/user/$(id -u)/ssh-agent.socket"
     ssh-add -l &>/dev/null
     ssh_status=$?
@@ -66,3 +63,7 @@ if [[ $OSTYPE == linux* ]]; then
     fi
 fi
 
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
