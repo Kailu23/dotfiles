@@ -18,3 +18,8 @@
 	url = git@github.com:Kailu23/dotfiles-hypr.git
 	branch = main
     ignore = dirty
+[submodule "noctalia"]
+	path = .config/noctalia
+	url = git@github.com:Kailu23/dotfiles-noctalia
+	branch = main
+    ignore = dirty
