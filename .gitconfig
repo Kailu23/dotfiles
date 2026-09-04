@@ -1,11 +1,6 @@
 [user]
 	name = Marin Valenčak
 	email = valencakmarin@gmail.com
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
 [gpg]
     program = ~/.config/git/gpg-program.sh
 [commit]
