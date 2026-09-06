@@ -1,3 +1,7 @@
+DISABLE_AUTO_UPDATE="true"
+DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_COMPFIX="true"
+
 ZSH_THEME="macovsky"
 plugins=(
     git
@@ -12,27 +16,17 @@ for zsh_file in ~/.config/zsh/*.zsh(N); do
     [ -r "$zsh_file" ] && source "$zsh_file"
 done
 
-DISABLE_AUTO_UPDATE="true"
+autoload -Uz compinit compaudit
 
-autoload -Uz compinit
-_zcompdump="${ZDOTDIR:-$HOME}/.zcompdump"
-
-compaudit() { return 0 }
-
-if [[ -s "$_zcompdump" ]]; then
-    compinit -C -d "$_zcompdump"
+if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
+    compinit
 else
-    compinit -d "$_zcompdump"
+    compinit -C
 fi
 
-# functions -c compinit _real_compinit
-# compinit() { _real_compinit -C "$@" }
+_zcompdump="${ZDOTDIR:-$HOME}/.zcompdump"
 
 source $ZSH/oh-my-zsh.sh
-
-unfunction compinit compaudit
-autoload -Uz compinit compaudit
-unset _zcompdump
 
 eval "$(starship init zsh)"
 
