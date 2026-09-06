@@ -2,6 +2,8 @@
 .config/**
 
 # Don't ignore
+!.zshrc
+!.zshenv
 !.config/
 !.config/delta
 !.config/git
