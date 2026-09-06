@@ -4,7 +4,6 @@ DISABLE_COMPFIX="true"
 
 ZSH_THEME="macovsky"
 plugins=(
-    git
     azure
     zsh-autosuggestions
     zsh-syntax-highlighting
